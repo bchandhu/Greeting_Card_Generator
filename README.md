@@ -19,4 +19,17 @@ Welcome to the Greetings Card Generator project! This web application allows use
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bchandhu/greetings_card_generator.git
+   git clone https://github.com/bchandhu/greetings-card-generator.git
+
+2. Navigate to the project directory:
+   ```bash
+   cd Greeting_Card_Generator
+3. Install dependencies:
+   ```bash
+   bundle install
+## Usage
+Start the Sinatra server:
+  ```bash
+  rackup
+
+
