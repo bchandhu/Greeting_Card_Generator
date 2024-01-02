@@ -1,9 +1,10 @@
 /* public/styles.css */
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 20px;
+  background-color: #f4f4f4;
 }
+
 
 .card {
   border: 2px solid #ccc;
@@ -22,4 +23,38 @@ body {
   max-width: 100%; /* Make sure the image doesn't exceed the width of its container */
   height: auto; /* Maintain aspect ratio */
   margin-top: 10px;
+}
+/* public/styles.css */
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
