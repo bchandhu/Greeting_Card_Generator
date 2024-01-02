@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css"> <!-- Add a new styles.css file for styling -->
+  <title>Your Greetings Card</title>
+  <style>
+    /* Add inline styles for wishing content */
+    .birthday-wish {
+      color: #ff4500; /* Orange color for birthday wish */
+      font-size: 18px;
+    }
+
+    .anniversary-wish {
+      color: #9932cc; /* Purple color for anniversary wish */
+      font-size: 18px;
+    }
+
+    .thank-you-wish {
+      color: #008000; /* Green color for thank you wish */
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Your Greetings Card</h2>
+
+  <div class="card">
+    <p>Occasion: <%= @occasion.capitalize %></p>
+    <img src="<%= image_url_for_occasion(@occasion) %>" alt="<%= @occasion %>" class="card-image">
+    
+    <!-- Add wishing content based on the occasion with inline styles -->
+    <% case @occasion %>
+    <% when 'birthday' %>
+      <p class="birthday-wish">Happy Birthday! May your day be filled with joy and laughter.</p>
+    <% when 'anniversary' %>
+      <p class="anniversary-wish">Congratulations on your anniversary! Wishing you many more years of love and happiness.</p>
+    <% when 'thank_you' %>
+      <p class="thank-you-wish">Thank you for everything! Your kindness is truly appreciated.</p>
+    <% else %>
+      <p>Best wishes on this special occasion!</p>
+    <% end %>
+  </div>
+
+</body>
+</html>

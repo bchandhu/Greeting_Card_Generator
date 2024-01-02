@@ -60,6 +60,7 @@ GEM
     hashdiff (1.0.1)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    json (2.7.1)
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
@@ -165,6 +166,7 @@ DEPENDENCIES
   draft_matchers
   grade_runner
   i18n
+  json
   pry
   puma (~> 5.0)
   rspec
