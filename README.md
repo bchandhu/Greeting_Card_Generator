@@ -1,18 +1,7 @@
-# sinatra-template
+#Greetings Card Generator
+Welcome to the Greetings Card Generator project! This web application allows users to generate personalized greetings cards for different occasions, complete with stylish images and customized wishing content.
 
-Use this repository to create new Sinatra apps. 
-
-Optionally, to use `ActiveRecord` for database operations, add to the `app.rb`:
-
-```ruby
-require "sinatra/activerecord"
-```
-
-And in the `config/environment.rb` file add this code block:
-
-```ruby
-configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-```
+#Features
+Select an occasion: Birthday, Anniversary, or Thank You.
+Generate a greetings card with a styled image and a heartfelt wishing message.
+Customize your wishes for each occasion.
