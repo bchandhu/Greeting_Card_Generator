@@ -18,7 +18,7 @@
     }
 
     .thank-you-wish {
-      color: #008000; /* Green color for thank you wish */
+      color: Green; /* Green color for thank you wish */
       font-size: 18px;
     }
   </style>
@@ -32,15 +32,15 @@
     <img src="<%= image_url_for_occasion(@occasion) %>" alt="<%= @occasion %>" class="card-image">
     
     <!-- Add wishing content based on the occasion with inline styles -->
-    <% case @occasion %>
-    <% when 'birthday' %>
-      <p class="birthday-wish">Happy Birthday! May your day be filled with joy and laughter.</p>
+    <% case @occasion
+       when 'birthday' %>
+         <p class="birthday-wish">Happy Birthday! May your day be filled with joy and laughter.</p>
     <% when 'anniversary' %>
-      <p class="anniversary-wish">Congratulations on your anniversary! Wishing you many more years of love and happiness.</p>
+         <p class="anniversary-wish">Congratulations on your anniversary! Wishing you many more years of love and happiness.</p>
     <% when 'thank_you' %>
-      <p class="thank-you-wish">Thank you for everything! Your kindness is truly appreciated.</p>
+         <p class="thank-you-wish">Thank you for everything! Your kindness is truly appreciated.</p>
     <% else %>
-      <p>Best wishes on this special occasion!</p>
+         <p>Best wishes on this special occasion!</p>
     <% end %>
   </div>
 
